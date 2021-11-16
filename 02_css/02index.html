@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading 순위</title>
+    <style>
+        h1 {
+            color: rgba(255,255,255, 1);
+            background-color: lightcoral;
+            width: 30%;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            border: 5px solid yellow;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        h1:hover {
+            background-color: yellow;
+            border-color: lightcoral;
+            color: #000;
+        }
+        /* * {color: green;} */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .text {color: #333;}
+        p {color: lime !important;}
+        #content {color: magenta;}
+        
+        ul, li {list-style: none;}
+        div {color: orange;}
+        .nav li:nth-child(2) {font-weight: 700;}
+    </style>
+</head>
+<body>
+    <!-- 
+        소스에서 우선순위
+        : 동급의 선택자를 작성한 경우 뒤에 작성한 것이 우선순위가 높다.
+        (덮어쓰기 개념)
+     -->
+    <h1>
+        <a href="https://www.naver.com">소스에서 우선순위</a>
+    </h1>
+    <!-- 
+        선택자의 우선순위
+        * -> 태그 -> 클래스 -> 아이디 -> 인라인 -> !important
+        범위가 좁을 수록 우선순위가 높다.
+
+        절대 바뀌지 않는 중요한 스타일을 적용하고 싶은 경우 !important
+     -->
+    <p class="text" id="content" style="color: red;" >선택자에서 우선순위</p>
+    <!-- 
+        스타일 상속
+        : 자식요소에 스타일을 별도로 지정하지 않으면 부모요소의 스타일이 자식요소로 상속되는 개념
+     -->
+    <div>
+        <h2>디자인</h2>
+        <ul class="nav">
+            <li><a href="">웹학과</a></li>
+            <li><a href="">편집디자인학과</a></li>
+            <li><a href="">CG학과</a></li>
+        </ul>
+    </div>
+</body>
+</html>
