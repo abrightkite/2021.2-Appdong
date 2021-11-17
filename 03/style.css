@@ -40,8 +40,9 @@ body {
 .lnb li:nth-child(6) {
     width: 39px;
     height: 31px;
+    /* text-indent: -9999em; */
+    color: rgba(0,0,0,0);
     background: url(img/top_icon.png) no-repeat;
-    text-indent: -9999em;
 }
 .lnb li:hover {border-bottom: 2px solid red;}
 
@@ -49,6 +50,7 @@ body {
 .main_visual {
     height: 464px;
     background: url(img/picture01.png) no-repeat center top/cover;
+    /* background: image repeat position(x) position(y)/size */
     overflow: hidden;
 }
 .main_visual .box {
@@ -82,6 +84,10 @@ body {
     height: 40px;
     border: 0;
 }
+.main_visual button:active {
+    background-color: #555;
+    color: #fff;
+}
 .main_visual button:nth-of-type(1) {
     background-color: #fff;
 }
@@ -89,6 +95,7 @@ body {
     background-color: rgb(255,140,1);
     color: #fff;
 }
+
 /* 본문1 */
 #section1 {
     width: 1240px;
