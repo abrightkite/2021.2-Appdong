@@ -1,0 +1,78 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    padding-top: 80px;
+}
+/* 헤더 */
+#header {
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    height: 80px;
+    overflow: hidden;
+    transition: 0.4s;
+    background-color: #fff;
+}
+#header::before {
+    content: '';
+    position: absolute;
+    top: 78px; left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+}
+
+
+.inner {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+#header .logo {
+    float: left;
+    margin-top: 25px; /*line-height는?*/
+}
+/* 네비게이션 */
+#lnb {
+    float: right;
+}
+#lnb .mainMenu {
+    float: left;
+    width: 130px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 700;
+}
+#lnb .mainMenu:hover > a {color: orangered;}
+.subMenu {
+    width: 130px;
+    height: 216px;
+    margin: 10px 0;
+    border-right: 1px dashed #ddd;
+}
+.mainMenu:first-child .subMenu {
+    border-left: 1px dashed #ddd;
+}
+.subMenu a {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 36px;
+    text-align: left;
+    text-indent: 15px;
+}
+.subMenu a:hover {
+    background-color: #008080;
+    color: #fff;
+}
+
+.visual img {width: 100%;}
