@@ -1,1 +1,15 @@
-# KNU Appdong 2021 2nd semester web mentoring
+# KNU Appdong 2021.2 Web Mentoring
+
+경북대학교 중앙동아리 학술분과 '앱동' 웹 멘토링 수업 자료
+
+HTML, CSS의 기초를 다루고 함께 간단한 웹페이지를 만들어 보자!
+
+### 01 HTML
+
+### 02
+
+### 03
+
+### 04
+
+### 05~06
