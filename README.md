@@ -8,6 +8,10 @@ HTML, CSS, JavaScript의 기초를 다루고 함께 간단한 웹페이지를 �
 
 ### 01 HTML
 
+HTML에서 자주 쓰는 태그를 사용해보기
+
+<img width="1431" alt="Screen Shot 2022-05-20 at 10 28 01 AM" src="https://user-images.githubusercontent.com/88179771/169430422-335570ad-7229-4044-9ce2-e7c5e5bc9add.png">
+
 ### 02
 
 ### 03
